@@ -12,7 +12,7 @@ CORS(app)
 
 def classify_text():
     texto = request.form.get('texto', '')
-    candidate_labels = ["Deporte", "Cine", "Politica", 'Otros']
+    candidate_labels = ["Religion", "Cine", "Politica", 'Deporte']
     classifier = pipeline("zero-shot-classification",
                       model="facebook/bart-large-mnli")
     
